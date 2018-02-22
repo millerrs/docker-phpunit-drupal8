@@ -6,7 +6,7 @@ ENV PATH /composer/vendor/bin:$PATH
 ENV SIMPLETEST_DB sqlite://tmp/site.sqlite
 
 RUN apk update && apk add --no-cache \
-	bash \
+    bash \
     curl \
     git \
     php7 \
