@@ -4,7 +4,7 @@ A PHPUnit image with SQLite for running Drupal 8 Unit and Kernel tests.
 ## Usage
 
 ```bash
-docker run -it --rm /path/to/tests:/app millerrs/phpunit-drupal8
+docker run -it --rm -v /path/to/tests:/app millerrs/phpunit-drupal8
 ```
 
 or
