@@ -3,6 +3,7 @@ FROM alpine:3.7
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /composer
 ENV PATH /composer/vendor/bin:$PATH
+ENV PHPUNIT_VERSION 4.8
 ENV SIMPLETEST_DB sqlite://tmp/site.sqlite
 
 RUN apk update && apk add --no-cache \
@@ -28,7 +29,7 @@ RUN apk update && apk add --no-cache \
     php7-zlib \
     && curl --silent --show-error https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer \
-    && composer global require phpunit/phpunit:~4.8 hirak/prestissimo
+    && composer global require phpunit/phpunit:~${PHPUNIT_VERSION} hirak/prestissimo
 
 WORKDIR /app
 
