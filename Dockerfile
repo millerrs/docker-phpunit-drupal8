@@ -14,6 +14,7 @@ RUN apk update && apk add --no-cache \
     php7-curl \
     php7-ctype \
     php7-dom \
+    php7-gd \
     php7-iconv \
     php7-json \
     php7-mbstring \
