@@ -6,7 +6,7 @@ ENV PATH /composer/vendor/bin:$PATH
 ENV PHPUNIT_VERSION 4.8
 ENV SIMPLETEST_DB sqlite://tmp/site.sqlite
 
-RUN apk update && apk add --no-cache \
+RUN apk add --no-cache \
     bash \
     curl \
     git \
