@@ -27,6 +27,7 @@ RUN apk add --no-cache \
     php7-sqlite3 \
     php7-tokenizer \
     php7-xml \
+    php7-xmlwriter \
     php7-zlib \
     && curl --silent --show-error https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer \
