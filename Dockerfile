@@ -35,4 +35,4 @@ RUN apk add --no-cache \
 
 WORKDIR /app
 
-CMD ["phpunit", "--testsuite=unit,kernel"]
+CMD ["phpunit"]
