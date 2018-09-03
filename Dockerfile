@@ -3,7 +3,7 @@ FROM alpine:3.8
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /composer
 ENV PATH /composer/vendor/bin:$PATH
-ENV PHPUNIT_VERSION 4.8
+ENV PHPUNIT_VERSION 6.5
 ENV SIMPLETEST_DB sqlite://tmp/site.sqlite
 
 RUN apk add --no-cache \
